@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>PixelTrice</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="media-box foto">
+  <video width="320" height="240" controls>
+    <source     th:src="${vid}"   type="video/mp4">
+    <source th:src="http://localhost:8080/api/v3/imagevid/1" type="video/mp4"/>
+    <p>Your browser does not support HTML5 video. Here is a link to the video</a> instead.</p>
+  </video>
+</div>
+
+</body>
+
+</html>
